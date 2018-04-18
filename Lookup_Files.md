@@ -15,15 +15,21 @@ For instance, protein 117 has a folding energy of -6, and perimeter (0,0,1,14) i
 Direct:
 
 0 0 0 0
+
 0     0
+
 0     0
+
 0 1 1 1
 
 Reverse:
 
 0 0 0 0
+
 0     1
+
 0     1
+
 0 0 0 1
 
 Note that sides are read clock-wise. Many proteins share the same perimeter, differing only in their folding energy.
@@ -63,15 +69,21 @@ For instance, perimeters 24 and 25 give rise to the following dimer:
 Direct:
 
 0 0 0 1 1 0 0 1
+
 0             0
+
 0 (25)   (24) 0
+
 0 1 0 0 0 0 0 0
 
 Inverse:
 
 0 1 0 0 0 0 0 0
+
 0             0 
+
 0 (24)   (25) 0
+
 0 0 0 1 1 0 0 1
 
 Because the third entry is 1, we know that in the direct folding, the protein to the left is the one with perimeter 25.
