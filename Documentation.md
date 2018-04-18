@@ -6,7 +6,7 @@ If, after reading this document, you still don't know how to make this work, or 
 
 ## Lookup Tables
 
-Every toyLIFE program must start with an initialization of a ToyPlugin object, using the default constructor. This creates an instance of the class ToyPlugin that contains the relevant lookup tables and allows us to compute phenotypes from genotypes.
+Every toyLIFE program must start with an initialization of a ToyPlugin object, using the default constructor. This creates an instance of the class ToyPlugin that contains the relevant lookup tables and allows us to compute phenotypes from genotypes. You can check what's stoed in the lookup tables by reading the file `Lookup_Files.md`
 
 ## Genotype Format
 
