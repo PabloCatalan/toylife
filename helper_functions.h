@@ -117,8 +117,8 @@ int str_hamming(const std::string& v1, const std::string& v2);
 //REVERSE
 std::string reverse(const std::string& s1);
 //RANDOM_GENOTYPE
-std::vector<std::pair<int,int> > random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator);
-std::string str_random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator);
+std::vector<std::pair<int,int> > vec_random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator);
+std::string random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator);
 //MUTATION
 std::string mutation(const std::string& genotype, int pos);
 

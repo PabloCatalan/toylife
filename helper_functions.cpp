@@ -135,7 +135,7 @@ std::string reverse(const std::string& s1){
   return s2;
 }
 //RANDOM_GENOTYPE
-std::vector<std::pair<int,int> > random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator){
+std::vector<std::pair<int,int> > vec_random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator){
   int total_genes=65536;
   std::vector<std::pair<int,int> > genotype(gene_number);
   //GENERATE RANDOM GENOTYPE
@@ -147,7 +147,7 @@ std::vector<std::pair<int,int> > random_genotype(int gene_number, std::uniform_r
   return genotype;
 }
 //STR_RANDOM_GENOTYPE
-std::string str_random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator){
+std::string random_genotype(int gene_number, std::uniform_real_distribution<double>& RNG, std::default_random_engine& generator){
   int n=20*gene_number;
   std::string genotype(n, '0');
   for (int g=0; g<n; ++g){
