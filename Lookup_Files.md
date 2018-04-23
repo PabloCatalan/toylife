@@ -114,6 +114,15 @@ The same for the `proteins_bind_prom*.txt` files, but with proteins instead of d
 
 ## `dim_metabolism` folder
 
-
+Each file refers to a particular metabolite. Thus, '4_7.txt' refers to a metabolite of length 4 whose binary sequence translates to 7 in decimal base. All metabolites from lengths 4 to 8 are included. In each file, the first column contains the id of a dimer that is able to bind this particular metabolite. The next number is the energy of the binding between the dimer and the metabolite. The next string can represent two things: (1) if the way the dimer has bound the metabolite makes it impossible for the metabolite to be broken, then the metabolite binary sequence is shown; (2) if the metabolite can be broken, then the string represents the binary sequence that proteins in toyLIFE will 'perceive', thus defining which interactions are possible. The fourth number represents the position in which the metabolite will be broken if catabolism takes place. And the fifth number represents the orientation of the dimer when binding the metabolite: 1 is direct form and 2 is reverse form. 
 
 ## `prot_metabolism`folder
+
+This folder is quite similar to `dim_metabolism`. There is a file for each metabolite, but instead of dimers, here we record which proteins are able to bind the corresponding metabolite. The first number is the protein id, the second one is the energy of the binding, the third number represents the orientation of the protein when binding the metabolite (1 if direct, 2 if reverse), the fourth number represents the side of the protein that binds the metabolite (from 0 to 3), and the last number represents where in the metabolite sequence the protein is binding:
+
+   0 1 0 1 0 1 0 1 -> metabolite of size 8
+   0 1 0 1 -> if protein binds here, last column will show a 0
+     1 0 1 0 -> last column shows a 1
+       0 1 0 1 -> last column shows a 2
+         1 0 1 0 -> last column shows a 3
+           0 1 0 1 -> last column shows a 4
