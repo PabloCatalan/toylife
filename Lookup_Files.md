@@ -16,9 +16,9 @@ Direct:
 
 0 0 0 0
 
-0     0
+0         0
 
-0     0
+0         0
 
 0 1 1 1
 
@@ -26,9 +26,9 @@ Reverse:
 
 0 0 0 0
 
-0     1
+0         1
 
-0     1
+0         1
 
 0 0 0 1
 
@@ -99,9 +99,13 @@ Contains the neighbors of each promoter and coding sequence.
 For instance, promoter 2 (in line 3) has as neighbors promoters 0, 3, 6 and 10, obtained mutating each position in the sequence:
 
 Promoter 2:  0010
+
 Promoter 3:  0011
+
 Promoter 0:  0000
+
 Promoter 6:  0110
+
 Promoter 10: 1010
 
 ## `promoters` folder
@@ -121,8 +125,14 @@ Each file refers to a particular metabolite. Thus, '4_7.txt' refers to a metabol
 This folder is quite similar to `dim_metabolism`. There is a file for each metabolite, but instead of dimers, here we record which proteins are able to bind the corresponding metabolite. The first number is the protein id, the second one is the energy of the binding, the third number represents the orientation of the protein when binding the metabolite (1 if direct, 2 if reverse), the fourth number represents the side of the protein that binds the metabolite (from 0 to 3), and the last number represents where in the metabolite sequence the protein is binding:
 
    0 1 0 1 0 1 0 1 -> metabolite of size 8
+   
    0 1 0 1 -> if protein binds here, last column will show a 0
+   
      1 0 1 0 -> last column shows a 1
+     
        0 1 0 1 -> last column shows a 2
+       
          1 0 1 0 -> last column shows a 3
+         
            0 1 0 1 -> last column shows a 4
+           
