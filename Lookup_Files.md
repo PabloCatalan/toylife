@@ -16,9 +16,9 @@ Direct:
 
 0 0 0 0
 
-0 (()) 0
+0 ()() 0
 
-0 (()) 0
+0 ()() 0
 
 0 1 1 1
 
@@ -26,9 +26,9 @@ Reverse:
 
 0 0 0 0
 
-0 (()) 1
+0 ()() 1
 
-0 (()) 1
+0 ()() 1
 
 0 0 0 1
 
@@ -70,9 +70,9 @@ Direct:
 
 0 0 0 1 1 0 0 1
 
-0             0
+0 ()()()()()()() 0
 
-0 (25)   (24) 0
+0 ((25))   ((24)) 0
 
 0 1 0 0 0 0 0 0
 
@@ -80,9 +80,9 @@ Inverse:
 
 0 1 0 0 0 0 0 0
 
-0             0 
+0 ()()()()()()() 0 
 
-0 (24)   (25) 0
+0 ((24))   ((25)) 0
 
 0 0 0 1 1 0 0 1
 
@@ -127,12 +127,8 @@ This folder is quite similar to `dim_metabolism`. There is a file for each metab
    0 1 0 1 0 1 0 1 -> metabolite of size 8
    
    0 1 0 1 -> if protein binds here, last column will show a 0
-   
-     1 0 1 0 -> last column shows a 1
-     
-       0 1 0 1 -> last column shows a 2
-       
-         1 0 1 0 -> last column shows a 3
-         
-           0 1 0 1 -> last column shows a 4
+   ()1 0 1 0 -> last column shows a 1
+   ()()0 1 0 1 -> last column shows a 2
+   ()()()1 0 1 0 -> last column shows a 3     
+   ()()()()0 1 0 1 -> last column shows a 4
            
