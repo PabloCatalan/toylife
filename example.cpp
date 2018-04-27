@@ -14,7 +14,7 @@ int main(){
   
   //GENERATE RANDOM GENOTYPE (FUNCTION IN "helper_functions.cpp")
   int gene_number=5;
-  std::string genotype=str_random_genotype(gene_number, RNG, generator);
+  std::string genotype=random_genotype(gene_number, RNG, generator);
   int gensize=genotype.size();
 
   //MUTATE THE GENOTYPE (FUNCTION IN "helper_functions.cpp")
