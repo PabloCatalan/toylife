@@ -16,6 +16,7 @@
 #  ******************************************************************************/
 
 ############## Operating-System and Processor Architecture Detection #########
+# (many thanks to Juan Antonio García-Martín for this part of the code)
 # This section attempts to auto-detect the OS. This is used only for convenience
 # and allows the same Makefile to be used on multiple operating systems
 # without modification.
