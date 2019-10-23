@@ -11,7 +11,7 @@ CATALÁN, P, MANRUBIA, S. AND CUESTA, J.A. (2019) Populations of genetic circuit
 
 First, run 'make all' to compile all executables
 
-(1) Obtain abundances of Boolean GRNs in toyLIFE: run 'grn_abundance', results will appear in 'results/grn_abundance.txt' and other files (see 'grn>_abundance.cpp' for more details).
+(1) Obtain abundances of Boolean GRNs in toyLIFE: run 'grn_abundance', results will appear in 'results/grn_abundance.txt' and other files (see 'grn_abundance.cpp' for more details). This program computes the corresponding GRN for each of the 2^40 two-gene genotypes in toyLIFE. Instead of doing it by brute-force, I wrote a specific code that made use of the unique properties of two-gene genotypes, thus saving computation time. The details are in the 'patternsplugin.cpp' file.
 
 (2) Compute all possible patterns: run 'gpmap_morphogen_choose_diffusion 31 100 0 point 1', where 31 is tissue size, 100 is pattern length and 0 specifies aperiodic boundary conditions; 'point' is one possible option for the initial morphogen signal (for more options, see the function 'morphogen_creator' in file 'patternsplugin.cpp'), and '1' specifies the diffusion scenario (in this case, 'only_P1': for more options, see file 'gpmap_morphogen_choose_diffusion.cpp'). See all output files at the end of the C++ file.
 
